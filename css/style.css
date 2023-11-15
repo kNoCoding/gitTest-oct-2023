@@ -8,6 +8,8 @@ h1 {
 
 .ball {
 
+    display: flex;
+
     width: 100px;
     height: 100px;
 
@@ -17,4 +19,13 @@ h1 {
 
     margin: 0 auto;
 
+
+
+    text-align: center;
+
+    cursor: pointer;
+
+justify-content: center;
+align-items: center;
 }
+
