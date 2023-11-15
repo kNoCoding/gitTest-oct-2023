@@ -1,6 +1,5 @@
 body {
     background-color: black;
-
 }
 
 h1 {
@@ -26,6 +25,32 @@ h1 {
 
     justify-content: center;
     align-items: center;
+
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+.another-ball {
+
+    display: flex;
+
+    width: 100px;
+    height: 100px;
+
+    transition-duration: 1s;
+    border-radius: 50%;
+
+    background-color: orange;
+
+    margin: 0 auto;
+    margin-top: 100px;
+
+
+    cursor: pointer;
+
+    align-items: center;
+    text-align: center;
 
     font-size: 22px;
     font-weight: bold;
