@@ -4,6 +4,7 @@
 function onBallClick() {
     var ball = document.querySelector('.ball');
 
+
     // Get the current width and height as integers (initialized to 0 if not set)
     var currentWidth = parseInt(ball.style.width) || 100;
     var currentHeight = parseInt(ball.style.height) || 100;
@@ -18,6 +19,13 @@ function onBallClick() {
 
     // Calculate the updated diameter (sum of width and height)
     var updatedDiameter = currentWidth + currentHeight;
+
+    if (updatedDiameter > 400) {
+        updatedDiameter = 100
+
+        ball.style.width = updatedDiameter + 'px';
+        ball.style.height = updatedDiameter + 'px';
+    }
 
     // Display the updated diameter inside the ball
     ball.innerHTML = updatedDiameter + 'px';
