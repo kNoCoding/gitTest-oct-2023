@@ -9,9 +9,18 @@ function onBallClick() {
     var currentWidth = parseInt(ball.style.width) || 100;
     var currentHeight = parseInt(ball.style.height) || 100;
 
-    // Increase the width and height by exactly 50 pixels in total (25 pixels each)
-    currentWidth += 25;
-    currentHeight += 25;
+    // // Increase the width and height by exactly 50 pixels in total (25 pixels each)
+    // currentWidth += 25;
+    // currentHeight += 25;
+
+    // .Change onBallClick() to increment the ball’s diameter by a random amount
+    // between 20px and 60px. ⇩
+
+    var randomIncrement = getRandomInt(20, 60)
+
+    currentWidth += randomIncrement
+    currentHeight += randomIncrement
+
 
     // Set the updated width and height for the ball
     ball.style.width = currentWidth + 'px';
