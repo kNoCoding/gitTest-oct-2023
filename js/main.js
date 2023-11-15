@@ -1,8 +1,11 @@
 'use strict'
 
 // doesnt grow by 50, no idea why, wasted too much time on this little shit
-function onBallClick() {
-    var ball = document.querySelector('.ball')
+function onBallClick(elBall, maxDiameter) {
+
+    var currBallClass = elBall.classList[elBall.classList.length - 1]
+
+    var ball = document.querySelector(`.${currBallClass}`)
 
     //     Add a getRandomColor() function to the util.js file and change the ball’s color
     // to a random color each time it is clicked. ⇩
@@ -33,7 +36,7 @@ function onBallClick() {
     // Calculate the updated diameter (sum of width and height)
     var updatedDiameter = currentWidth + currentHeight;
 
-    if (updatedDiameter > 400) {
+    if (updatedDiameter > maxDiameter) {
         updatedDiameter = 100
 
         ball.style.width = updatedDiameter + 'px';
