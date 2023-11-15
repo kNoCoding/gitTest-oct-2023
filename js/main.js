@@ -2,7 +2,11 @@
 
 // doesnt grow by 50, no idea why, wasted too much time on this little shit
 function onBallClick() {
-    var ball = document.querySelector('.ball');
+    var ball = document.querySelector('.ball')
+
+    //     Add a getRandomColor() function to the util.js file and change the ball’s color
+    // to a random color each time it is clicked. ⇩
+    ball.style.backgroundColor = getRandomColor()
 
 
     // Get the current width and height as integers (initialized to 0 if not set)
